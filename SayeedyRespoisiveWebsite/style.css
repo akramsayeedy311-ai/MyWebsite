@@ -17,7 +17,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(imges/p4.png);
+    background-image: url(images/p4.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -46,10 +46,10 @@ nav {
 
 .logo {
     width: 140px;
-    height: 140px;
+    height: 120px;
     object-fit: cover;
 
-    border-radius: 50%;
+    border-radius: 100%;
     padding: 5px;
 
     background: linear-gradient(135deg, #ff004f, #00f7ff);
@@ -68,9 +68,9 @@ nav {
     transform: scale(1.1) rotate(5deg);
 
     box-shadow:
-        0 0 25px #ff004f,
-        0 0 40px #00f7ff,
-        0 0 60px #ff004f;
+        0 0 20px #ff004f,
+        0 0 20px #00f7ff,
+        0 0 40px #ff004f;
 
     cursor: pointer;
 }
@@ -175,9 +175,11 @@ nav ul li a:hover::after {
 }
 
 .about-img:hover {
-    box-shadow: 5px 5px 10px #b54769;
+    box-shadow: 3px 3px 7px #b54769;
     background-color: #3cb371;
-    border-radius: 10%;
+    border-radius: 100%;
+    border: 5px double #ff4d88;
+
 }
 
 .about-img:hover {
