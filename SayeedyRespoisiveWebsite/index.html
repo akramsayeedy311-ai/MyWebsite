@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayeedyWebSite</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+</head>
+
+
+
+<body>
+    <!------------------------Header Secton-------------->
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="imges/Logo2.png" alt="logo-img" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I am <span id="typing-name"></span><br> From Afghanistan!</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------about---------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="./imges/Background.png" class="about-img">
+                </div>
+
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>
+                        I am Akramullah Sayeedy, a Computer Science student specializing in
+                        Information Systems at Wardak University, Afghanistan.
+                        I am passionate about Frontend Web Development, UI/UX Design,
+                        Java Programming, and Database Management.
+                        I enjoy creating modern, responsive, and user-friendly websites
+                        with attractive animations and professional interfaces.
+                    </p>
+
+                    <!-- TAB TITLES -->
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+
+                        <p class="tab-links" onclick="opentab('education')">
+                            Education
+                        </p>
+
+                    </div>
+
+                    <!-- SKILLS -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li>
+                                <span>Frontend Development</span><br>
+                                HTML, CSS, JavaScript & Responsive Website Design
+                            </li>
+
+                            <li>
+                                <span>UI/UX Design</span><br>
+                                Modern User Interface & User Experience Design
+                            </li>
+
+                            <li>
+                                <span>Java & JavaFX</span><br>
+                                Desktop Application Development
+                            </li>
+
+                            <li>
+                                <span>Database Management</span><br>
+                                MySQL & Information System Management
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- EXPERIENCE -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li>
+                                <span>2024 - Present</span><br>
+                                Freelance Frontend Web Developer
+                            </li>
+
+                            <li>
+                                <span>2025 - Present</span><br>
+                                Building Responsive Portfolio & Business Websites
+                            </li>
+
+                            <li>
+                                <span>University Projects</span><br>
+                                Java, JavaFX & Database System Projects
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- EDUCATION -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+
+                            <li>
+                                <span>Computer Science Student</span><br>
+                                Wardak University - Information Systems Department
+                            </li>
+
+                            <li>
+                                <span>Web Development</span><br>
+                                Self-learning HTML, CSS, JavaScript & UI Design
+                            </li>
+
+                            <li>
+                                <span>Database & System Control</span><br>
+                                Studying Database Management & Information Systems
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------Services Section---------------- -->
+    <div id="services">
+        <div class="container">
+
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list">
+
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Frontend Web Development</h2>
+                    <p>
+                        I build modern, responsive and interactive websites using
+                        HTML, CSS and JavaScript with clean UI and smooth animations.
+                    </p>
+                    <a href="#portfolio">View Projects</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-paint-brush"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        I design user-friendly and attractive interfaces with focus
+                        on user experience, layout structure and modern design trends.
+                    </p>
+                    <a href="#about">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-database"></i>
+                    <h2>Database & Systems</h2>
+                    <p>
+                        I work with MySQL and information systems for data management,
+                        storage structure and system control applications.
+                    </p>
+                    <a href="#contact">Contact Me</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- -------------------portfolio---------------- -->
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="imges/Ak-Logo.png">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>The app connects you the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#">
+                            <i class="fas fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imges/full-stack-logo.png">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>The app connects you the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#">
+                            <i class="fas fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imges/web-log.png">
+                    <div class="layer">
+                        <h3>Online Shopping app</h3>
+                        <p>The app connects you the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#">
+                            <i class="fas fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" onclick="openGallery()">See more</a>
+
+            <div id="moreworks" style="display:none; margin-top:20px;">
+
+                <div class="work">
+                    <img src="imges/web-log.png">
+                    <div class="layer">
+                        <h3>Extra Project 1</h3>
+                        <p>More sample work added here.</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="imges/full-stack-logo.png">
+                    <div class="layer">
+                        <h3>Extra Project 2</h3>
+                        <p>Another project example.</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div> -->
+    <!-- ================= PORTFOLIO SECTION ================= -->
+    <div id="portfolio">
+        <div class="container">
+
+            <h1 class="sub-title">My Works</h1>
+
+            <!-- MAIN WORKS -->
+            <div class="work-list" id="mainWorks">
+
+                <div class="work">
+                    <img src="imges/Project-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Connects people around the world.</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="imges/projecg-1.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Online music streaming app.</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="imges/web-log.png">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>E-commerce platform design.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SEE MORE BUTTON -->
+            <div style="text-align:center; margin-top:20px;">
+                <a class="btn" onclick="openGallery()">See More</a>
+            </div>
+
+            <!-- MORE WORKS -->
+            <div id="moreworks">
+
+                <h2 class="sub-title">More Works</h2>
+
+                <div class="work-list">
+
+                    <div class="work">
+                        <img src="imges/scholl1.jpg">
+                        <div class="layer">
+                            <h3>Project 1</h3>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="imges/school2.jpg">
+                        <div class="layer">
+                            <h3>Project 2</h3>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="imges/school3.jpg">
+                        <div class="layer">
+                            <h3>Project 3</h3>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="imges/Background.png">
+                        <div class="layer">
+                            <h3>Project 4</h3>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="imges/background3.jpg">
+                        <div class="layer">
+                            <h3>Project 5</h3>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="imges/hero-bg.jpg">
+                        <div class="layer">
+                            <h3>Project 6</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- GO BACK -->
+                <div style="text-align:center; margin-top:20px;">
+                    <a class="btn" onclick="closeGallery()">Go Back</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -------------------Contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>akramsayeedy311@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>(+93)730794571</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100084888264901" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/93730794571" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/SayeedyTelegram" target="_blank">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="imges/My-CV-File.pdf" download class="btn btn2">Download My CV</a>
+
+
+                </div>
+                <div class="contact-right">
+
+                    <form id="contactForm">
+
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+                        <button type="submit" class="btn btn2" id="sendBtn">
+                            Send Message
+                        </button>
+
+                        <p id="msg"></p>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            © 2026 All Rights Reserved | Designed with
+            <i class="fas fa-heart"></i>
+            by En. Akramullah Sayeedy
+        </p>
+    </div>
+    </div>
+    <!-- دا لاندینی کد د اړیکی لپاره دی چی د ګوګل شیټ کی د یوزر مسیج ثبت کیږی. او پورتنی کد یی زما خپل ایمل ادرس ته لیږی -->
+    <script>
+        // tabs script
+    </script>
+
+    <script>
+        // menu script
+    </script>
+
+    <!-- <script>
+        const form = document.querySelector("form");
+        const msg = document.getElementById("msg");
+        const button = form.querySelector("button");
+
+        const scriptURL = "https://script.google.com/macros/s/AKfycbwXYsgZFJ7R7bXpf90H0KPOmNSsnkD-H-vgOYrTQ8jlqbjt9d7RUhOf6Lsqum2Hntrv/exec";
+
+        let isSubmitting = false;
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            //  STOP multiple submits
+            if (isSubmitting) return;
+
+            isSubmitting = true;
+            button.disabled = true;
+            button.innerText = "Sending...";
+
+            let data = {
+                name: form.elements["Name"].value,
+                email: form.elements["Email"].value,
+                message: form.elements["Message"].value
+            };
+
+            fetch(scriptURL, {
+                method: "POST",
+                body: JSON.stringify(data)
+            })
+                .then(res => res.json())
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully ";
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.innerHTML = "Error Sending Message ";
+                    console.log(error);
+                })
+                .finally(() => {
+                    isSubmitting = false;
+                    button.disabled = false;
+                    button.innerText = "Submit";
+
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 3000);
+                });
+        });
+    </script> -->
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+
+        }
+    </script>
+    <script>
+        function toggleWorks() {
+            var more = document.getElementById("moreworks");
+
+            if (more.style.display === "none") {
+                more.style.display = "block";
+            } else {
+                more.style.display = "none";
+            }
+        }
+    </script>
+    <!-- ګالری  -->
+
+
+    <script>
+        function openGallery() {
+            document.getElementById("mainWorks").style.display = "none";
+            document.getElementById("moreworks").style.display = "block";
+        }
+
+        function closeGallery() {
+            document.getElementById("moreworks").style.display = "none";
+            document.getElementById("mainWorks").style.display = "grid";
+        }
+    </script>
+    <script>
+        const text = "En Akramullah Sayeedy";
+        let index = 0;
+        let isDeleting = false;
+        let speed = 150;
+
+        function typeEffect() {
+            const target = document.getElementById("typing-name");
+
+            if (!isDeleting) {
+                target.innerHTML = text.substring(0, index + 1);
+                index++;
+
+                if (index === text.length) {
+                    isDeleting = true;
+                    speed = 1000; // pause before delete
+                } else {
+                    speed = 150;
+                }
+            } else {
+                target.innerHTML = text.substring(0, index - 1);
+                index--;
+
+                if (index === 0) {
+                    isDeleting = false;
+                    speed = 300;
+                } else {
+                    speed = 80;
+                }
+            }
+
+            setTimeout(typeEffect, speed);
+        }
+
+        typeEffect();
+    </script>
+    <script>
+        const form = document.getElementById("contactForm");
+        const msg = document.getElementById("msg");
+        const sendBtn = document.getElementById("sendBtn");
+
+        const scriptURL = "https://formspree.io/f/xlgzoneb";
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // stop redirect
+
+            sendBtn.classList.add("sending");
+            sendBtn.innerText = "Sending...";
+
+            let formData = new FormData(form);
+
+            fetch(scriptURL, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+                .then(response => {
+
+                    if (response.ok) {
+                        msg.innerHTML = "Message sent successfully !";
+                        form.reset();
+
+                    } else {
+                        msg.innerHTML = "Failed to send message !";
+                    }
+
+                })
+                .catch(() => {
+                    msg.innerHTML = "Error sending message !";
+                })
+                .finally(() => {
+                    sendBtn.classList.remove("sending");
+                    sendBtn.innerText = "Send Message";
+
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 3000);
+                });
+        });
+    </script>
+
+
+</body>
+
+</html>
